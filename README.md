@@ -17,22 +17,9 @@ cms     : https://upbeat-edison-337641.netlify.app/admin
 5. PR creates a deploy preview of the site including the CMS
     - Again the content is pulled from and committed to the master branch
 6. Developers experience
-    - Default options are not great 
-        - JS with some sort of TypeScript option but I am skeptical about support
-        - Large CS framework seems to be included but we can drop probably
-        - GraphQL seems like overkill and will certainly have a steep learning curve
+    - Very snappy, feels like instant reload of content for the small test site
     - Gotta fix the dev environment committing to master
 7. Build from multiple sources
-    - graphql is a pain and I don't see the benefit for our use cases (maybe research a bit to see what upside may be)
-        - It does have a GUI to generate some simpler queries (uses DB connect to collect schema data)
-    - Unknown errors in build again (useless JS errors pointing to some build component with no information as to cause)
-    - Reverting all the way back to the init project, I get CSS errors breaking the build (no semicolons?!?! no curly brackets?!?!)
-    - Deleting all Sass code I get the original error (I give up)
-8. Searching for fixes to issues I found some horror stories about Gatsby (misleading advertisements about performance etc.)
-    - Disgruntled developers venting or legitimate unethical behaviour?
-9. Creating a personal Heroku test database and adding URL to netlify configs   
-    - https://dashboard.heroku.com/apps/mark-test-database
+    - Requires we roll our own solution, I would hate to write anything in JS but not sure how to include GO commands/modules
 
-Calling it quits - latest build error
-
-https://app.netlify.com/sites/laughing-noether-7b439b/deploys/602db0d1195b4c0e2e8b785c
+Calling it quits - sourced data is a blocker but I may come back if there are no other options
